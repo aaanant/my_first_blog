@@ -1,0 +1,53 @@
+h3 a {
+font-family: 'Lobster';
+}
+
+body {
+padding-left:20px; 
+background-color:#aba;
+}
+
+h1 {
+font-family: 'Lobster';
+font-weight: 200;
+}
+
+#footer {
+text-align: center;
+background-color:#558844;
+font-family:'Lobster';
+
+    color: #000;
+padding-left:0px;
+bottom:30px;
+}
+.blog {
+border-style:inset;
+border-top-left-radius:23px;
+border-color:#aa9900;
+border-width:8px;
+height:800px;
+}
+.content{
+padding-left:40px;
+padding-right:40px;
+font-style:italic;
+border-style:outset;
+margin:10px;
+border-color:#aa9900
+}
+.header {
+background-color: #aa9900;
+text-align: center;
+height: 80px;
+font-size:50px;
+padding-top:7px;
+padding-left:0px;
+}
+.subhead{
+text-align:center;
+text-decoration:underline;
+}
+.posthead{
+border-bottom: 2px solid black;
+}

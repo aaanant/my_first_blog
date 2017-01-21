@@ -1,13 +1,28 @@
-<head><title>Astrals Workbench</title></head>
+
+{% load staticfiles %}
+<html>
+<head>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<title>Astrals Workbench</title></head>
  <body>
-<h1>Hello folks!</h1>
-<div><h2>Blog test</h2></div>
+<h1><div class="header">Team Astrals</div></h1>
+<div class="blog">
+<h2><div class="subhead"> Test Blog</div></h2>
 {% for post in posts %}
-    <div>
+    <div class="content">
+
         <p>published: {{ post.published_date }}</p>
-        <h3><a href="">{{ post.title }}</a></h3>
+        <h3><div class="posthead"><a href="">{{ post.title }}</a></div></h3>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
+</div>
+<div id="footer">
+<p><em>Developed by &copy Astrode Labs, 2017</em><br>Project Astrals :-)</p>
+</div>
    </body>
 </html>
