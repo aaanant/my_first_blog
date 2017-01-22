@@ -4,7 +4,7 @@ font-family: 'Lobster';
 
 body {
 padding-left:20px; 
-background-color:#aba;
+background-color:#fff;
 }
 
 h1 {
@@ -37,12 +37,15 @@ margin:10px;
 border-color:#aa9900
 }
 .header {
-background-color: #aa9900;
+background-color:#a90;
 text-align: center;
 height: 80px;
 font-size:50px;
 padding-top:7px;
 padding-left:0px;
+}
+.header a{
+color:#000;
 }
 .subhead{
 text-align:center;
@@ -51,3 +54,4 @@ text-decoration:underline;
 .posthead{
 border-bottom: 2px solid black;
 }
+

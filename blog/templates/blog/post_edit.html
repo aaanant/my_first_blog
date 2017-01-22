@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<html>
+<head>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<title>Astrals Workbench</title></head>
+ <body>
+<h1><div class="header" >
+
+<a href"/">Team Astrals</a></div></h1>
+ <div class="blog"><h1>New post</h1>
+<form method="POST" class="post-form">{% csrf_token %}
+{{ form.as_p }}
+<button type="submit" class="save btn btn default">Save</button>
+</form>
+ </div><div id="footer">
+<p><em>Developed by &copy Astrode Labs, 2017</em><br>Project Astrals :-)</p>
+</div>
+</body>
+</html>
